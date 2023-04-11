@@ -1,0 +1,77 @@
+$card-border-color: #ccc;
+$card-border-radius: 5px;
+$card-box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+$card-padding: 1rem;
+$card-max-width: 500px;
+$card-min-width: 500px;
+$card-min-height: 150px;
+$card-max-height: 500px;
+
+.card {
+  border: 1px solid $card-border-color;
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+  padding: $card-padding;
+  max-width: $card-max-width;
+  min-width: $card-min-width;
+  min-height: $card-min-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s ease-in-out;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 15px;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    background-color: #3e8e41;
+  }
+
+  button {
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+    color: #333;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  .button:hover {
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
